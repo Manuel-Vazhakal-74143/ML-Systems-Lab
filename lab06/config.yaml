@@ -1,0 +1,12 @@
+experiment_name: "Lab6_Training_Pipeline"
+seed: 42
+data_dir: "./data"
+checkpoint_dir: "./checkpoints"
+batch_size: 64
+epochs: 5
+learning_rate: 0.001
+num_workers: 2
+optimizer: "adam"      
+scheduler: "step"      
+grad_accum_steps: 4    # Task 6: 64 * 4 = 256 effective batch size
+resume_from_checkpoint: true
